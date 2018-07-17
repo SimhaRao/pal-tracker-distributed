@@ -12,7 +12,7 @@ public class SecurityConfig extends AuthorizationServerConfigurerAdapter {
 
     @Override
     public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
-        clients.inMemory()
+        clients.inMemory() 
                 .withClient("tracker-client")
                 .secret("supersecret")
                 .authorizedGrantTypes("client_credentials")
