@@ -20,7 +20,7 @@ import java.util.TimeZone;
 @EnableEurekaClient
 @ComponentScan({"io.pivotal.pal.tracker.allocations", "io.pivotal.pal.tracker.restsupport"})
 public class App {
-
+    String junk = "junk";
     public static void main(String[] args) {
         TimeZone.setDefault(TimeZone.getTimeZone("UTC"));
         SpringApplication.run(App.class, args);
